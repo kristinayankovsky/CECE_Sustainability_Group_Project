@@ -151,6 +151,94 @@ li + li {
   font-size: 14px;
 }
 
+.interview-profile {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 24px;
+  margin: 18px 0 22px;
+  padding: 18px 20px;
+  border-left: 3px solid #719174;
+  background: #f2f5ef;
+}
+
+.interview-profile h3 {
+  margin: 2px 0 0;
+  color: #244b38;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.interview-eyebrow {
+  margin: 0 0 2px;
+  color: #5d7565;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.interview-profile dl {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+}
+
+.interview-profile dl div {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 12px;
+}
+
+.interview-profile dd {
+  font-size: 14px;
+}
+
+.interview-introduction {
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+.interview-theme {
+  padding: 22px 0;
+  border-top: 1px solid #e0e5e0;
+}
+
+.interview-theme h3 {
+  margin-top: 0;
+  color: #244b38;
+  font-size: 18px;
+}
+
+.interview-theme blockquote {
+  margin: 14px 0;
+  padding: 12px 18px;
+  border-left: 3px solid #719174;
+  background: #fafbf8;
+  color: #405247;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.interview-theme blockquote p {
+  margin: 0;
+}
+
+.interview-takeaway {
+  margin-top: 8px;
+  padding: 18px 20px;
+  border: 1px solid #d5ddd7;
+  background: #fafbf8;
+}
+
+.interview-takeaway h3 {
+  margin: 0 0 6px;
+  color: #244b38;
+}
+
+.interview-takeaway p {
+  margin: 0;
+}
+
 .member-list {
   margin: 0;
 }
@@ -248,6 +336,19 @@ button:hover {
   .member-list > div {
     grid-template-columns: 1fr;
     gap: 4px;
+  }
+
+  .interview-profile,
+  .interview-profile dl div {
+    grid-template-columns: 1fr;
+  }
+
+  .interview-profile {
+    gap: 12px;
+  }
+
+  .interview-profile dl div {
+    gap: 2px;
   }
 
   .project-graphics {
